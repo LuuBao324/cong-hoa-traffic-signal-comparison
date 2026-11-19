@@ -1,0 +1,12 @@
+method,0.1,0.5,1.0
+fixed_time,4,4,4
+switching_loss_mp,4,4,3
+c_mp,4,4,1
+td_mp_2023,4,4,1
+cv_mp_2025,4,4,4
+queue_responsive_2026,4,4,4
+cn_mp_2024,4,4,0
+wncn_mp_2024,4,4,0
+wstar_ncn_mp_2024,4,4,4
+wstar_cn_mp_2024,4,4,4
+coordinated_auction_2024,4,4,2

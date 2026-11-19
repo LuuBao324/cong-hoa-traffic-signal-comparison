@@ -1,0 +1,3 @@
+# Preserve exact bytes for recorded hashes and experiment signatures.
+# Prevent platform-specific newline conversion in source and frozen inputs.
+* -text

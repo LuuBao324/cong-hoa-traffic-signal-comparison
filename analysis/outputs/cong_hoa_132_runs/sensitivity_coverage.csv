@@ -1,0 +1,4 @@
+policy,eligible_probes,runs_with_eligible_probes,paired_probe_rows_including_fixed
+All four arrived,460,115,460
+Exclude affected probes,459,115,459
+Zero network events,148,37,108

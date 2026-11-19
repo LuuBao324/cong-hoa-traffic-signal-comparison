@@ -1,0 +1,463 @@
+{
+  "source": "dataset_cong_hoa",
+  "accepted": false,
+  "target_runs": 132,
+  "target_research_runs": 120,
+  "actual_research_runs": 120,
+  "actual_runs": 132,
+  "actual_probe_rows": 528,
+  "methods": [
+    "c_mp",
+    "cn_mp_2024",
+    "coordinated_auction_2024",
+    "cv_mp_2025",
+    "fixed_time",
+    "queue_responsive_2026",
+    "switching_loss_mp",
+    "td_mp_2023",
+    "wncn_mp_2024",
+    "wstar_cn_mp_2024",
+    "wstar_ncn_mp_2024"
+  ],
+  "scales": [
+    0.1,
+    0.5,
+    1.0
+  ],
+  "seeds": [
+    100,
+    101,
+    102,
+    103
+  ],
+  "checks": [
+    {
+      "name": "paper_eligibility",
+      "passed": true,
+      "detail": "Each research method maps to a 2023+ nonlearning paper; four named ECC2024 variants share one paper; fixed-time is separate."
+    },
+    {
+      "name": "no_rl_or_training",
+      "passed": true,
+      "detail": "No RL branch is extracted from a hybrid paper in the current registry."
+    },
+    {
+      "name": "method_coverage",
+      "passed": true,
+      "detail": "10/10 research methods + baseline"
+    },
+    {
+      "name": "demand_coverage",
+      "passed": true,
+      "detail": "3/3 demand levels"
+    },
+    {
+      "name": "seed_coverage",
+      "passed": true,
+      "detail": "4/4 seeds"
+    },
+    {
+      "name": "run_coverage",
+      "passed": true,
+      "detail": "132/132 complete runs"
+    },
+    {
+      "name": "unique_probe_rows",
+      "passed": true,
+      "detail": "0 duplicates"
+    },
+    {
+      "name": "four_probes_per_run",
+      "passed": true,
+      "detail": "528 probe rows / 132 runs"
+    },
+    {
+      "name": "all_probes_arrived",
+      "passed": false,
+      "detail": "34 unfinished probes"
+    },
+    {
+      "name": "no_collision_or_teleport",
+      "passed": false,
+      "detail": "95 affected runs, 68 invalid probes"
+    },
+    {
+      "name": "signal_and_connection_warnings",
+      "passed": true,
+      "detail": "0 warnings"
+    },
+    {
+      "name": "paired_baselines",
+      "passed": false,
+      "detail": "460/528 valid paired rows"
+    },
+    {
+      "name": "transition_policy_documented",
+      "passed": true,
+      "detail": "Each method must record its transition policy. Stored all-red phases and optional added clearance are distinct; documentation is not a real-world calibration certificate."
+    },
+    {
+      "name": "planned_grid_complete",
+      "passed": true,
+      "detail": "132/132 planned combinations"
+    }
+  ],
+  "warnings": [],
+  "dataset_schema": [
+    {
+      "name": "run_id",
+      "role": "provenance",
+      "description": "One simulation run; four probes belong to the same run",
+      "missing": 0
+    },
+    {
+      "name": "scenario",
+      "role": "provenance",
+      "description": "Shared demand and seed input configuration",
+      "missing": 0
+    },
+    {
+      "name": "probe_id",
+      "role": "provenance",
+      "description": "Tracked vehicle identifier",
+      "missing": 0
+    },
+    {
+      "name": "method",
+      "role": "input",
+      "description": "Controller, not a learned feature",
+      "missing": 0
+    },
+    {
+      "name": "is_reference",
+      "role": "provenance",
+      "description": "True for the extra shared fixed-time baseline",
+      "missing": 0
+    },
+    {
+      "name": "backend",
+      "role": "provenance",
+      "description": "Simulator API/backend",
+      "missing": 0
+    },
+    {
+      "name": "engine_version",
+      "role": "provenance",
+      "description": "Actual simulator version reported by the running backend",
+      "missing": 0
+    },
+    {
+      "name": "simulation_step_s",
+      "role": "provenance",
+      "description": "Numerical simulation step length in seconds",
+      "missing": 0
+    },
+    {
+      "name": "stop_reason",
+      "role": "quality",
+      "description": "All tracked probes arrived, or simulation guard reached",
+      "missing": 0
+    },
+    {
+      "name": "phase_switches",
+      "role": "outcome",
+      "description": "Controller switches across the network up to stop; unequal windows",
+      "missing": 48
+    },
+    {
+      "name": "controller_exercised",
+      "role": "quality",
+      "description": "False for QD runs that only used the initial/fallback plan",
+      "missing": 0
+    },
+    {
+      "name": "demand_scale",
+      "role": "input",
+      "description": "Demand multiplier; assumed, not observed traffic",
+      "missing": 0
+    },
+    {
+      "name": "seed",
+      "role": "provenance",
+      "description": "Paired random seed; not a traffic measurement",
+      "missing": 0
+    },
+    {
+      "name": "vehicle_type",
+      "role": "input",
+      "description": "Probe class",
+      "missing": 0
+    },
+    {
+      "name": "vehicle_movement_model",
+      "role": "input",
+      "description": "Recorded movement model; unspecified for legacy runs",
+      "missing": 0
+    },
+    {
+      "name": "lane_change_model",
+      "role": "input",
+      "description": "Recorded SUMO lane-changing model",
+      "missing": 0
+    },
+    {
+      "name": "route_variant",
+      "role": "input",
+      "description": "Fixed center/outer probe path",
+      "missing": 0
+    },
+    {
+      "name": "corridor_vph_per_direction",
+      "role": "input",
+      "description": "Explicitly assigned corridor background vehicles/hour/direction",
+      "missing": 0
+    },
+    {
+      "name": "corridor_requested_vph_forward",
+      "role": "input",
+      "description": "Explicitly assigned corridor background vehicles/hour towards Truong Chinh",
+      "missing": 0
+    },
+    {
+      "name": "corridor_requested_vph_reverse",
+      "role": "input",
+      "description": "Explicitly assigned corridor background vehicles/hour in the opposite direction",
+      "missing": 0
+    },
+    {
+      "name": "map_requested_vph",
+      "role": "input",
+      "description": "Requested background vehicles/hour, whole map",
+      "missing": 0
+    },
+    {
+      "name": "corridor_related_requested_vph",
+      "role": "input",
+      "description": "Requested journeys/hour using any Cong Hoa segment; includes side-road entry and exit journeys",
+      "missing": 0
+    },
+    {
+      "name": "corridor_related_generated_vehicles",
+      "role": "input",
+      "description": "Generated ordinary journeys using any Cong Hoa segment during the demand window",
+      "missing": 0
+    },
+    {
+      "name": "map_generated_vehicles",
+      "role": "input",
+      "description": "Generated background vehicles during demand window; not actually inserted",
+      "missing": 0
+    },
+    {
+      "name": "map_generation_ratio",
+      "role": "quality",
+      "description": "Generated / requested background vehicles during demand window; routing losses, not completion rate",
+      "missing": 0
+    },
+    {
+      "name": "demand_duration_s",
+      "role": "input",
+      "description": "Demand generation window (s)",
+      "missing": 0
+    },
+    {
+      "name": "probe_requested_depart_s",
+      "role": "input",
+      "description": "Scheduled probe departure (s)",
+      "missing": 0
+    },
+    {
+      "name": "motorcycle_share",
+      "role": "input",
+      "description": "Requested corridor motorcycle proportion",
+      "missing": 0
+    },
+    {
+      "name": "car_share",
+      "role": "input",
+      "description": "Requested corridor passenger-car proportion",
+      "missing": 0
+    },
+    {
+      "name": "truck_share",
+      "role": "input",
+      "description": "Requested corridor truck proportion",
+      "missing": 0
+    },
+    {
+      "name": "bus_share",
+      "role": "input",
+      "description": "Requested corridor bus proportion",
+      "missing": 0
+    },
+    {
+      "name": "travel_time_s",
+      "role": "outcome",
+      "description": "Actual insertion to arrival; excludes departure delay",
+      "missing": 34
+    },
+    {
+      "name": "waiting_time_s",
+      "role": "outcome",
+      "description": "Waiting within trip, already part of travel time",
+      "missing": 0
+    },
+    {
+      "name": "depart_delay_s",
+      "role": "outcome",
+      "description": "Delay before insertion; separate from travel time",
+      "missing": 0
+    },
+    {
+      "name": "route_length_m",
+      "role": "outcome",
+      "description": "Distance actually traveled from SUMO tripinfo (m)",
+      "missing": 34
+    },
+    {
+      "name": "mean_speed_kmh",
+      "role": "outcome",
+      "description": "Actual route length / trip duration × 3.6",
+      "missing": 34
+    },
+    {
+      "name": "time_loss_s",
+      "role": "outcome",
+      "description": "SUMO timeLoss, not equal to waitingTime",
+      "missing": 34
+    },
+    {
+      "name": "waiting_count",
+      "role": "outcome",
+      "description": "SUMO waitingCount",
+      "missing": 34
+    },
+    {
+      "name": "collisions",
+      "role": "quality",
+      "description": "Whole-run collision count up to stop",
+      "missing": 0
+    },
+    {
+      "name": "teleports",
+      "role": "quality",
+      "description": "Whole-run teleport count up to stop",
+      "missing": 0
+    },
+    {
+      "name": "completed",
+      "role": "quality",
+      "description": "Probe arrival recorded",
+      "missing": 0
+    },
+    {
+      "name": "censored",
+      "role": "quality",
+      "description": "Probe has no recorded arrival at experiment stop",
+      "missing": 0
+    },
+    {
+      "name": "departed",
+      "role": "quality",
+      "description": "Probe was actually inserted into the network",
+      "missing": 0
+    },
+    {
+      "name": "valid_for_comparison",
+      "role": "quality",
+      "description": "Eligibility under the saved comparison policy; all_four_arrived permits runs with flagged events",
+      "missing": 0
+    },
+    {
+      "name": "clean_run",
+      "role": "quality",
+      "description": "Original strict check including zero whole-run collisions and teleports",
+      "missing": 0
+    },
+    {
+      "name": "all_four_arrived",
+      "role": "quality",
+      "description": "All four distinct tracked vehicles recorded positive completed trip durations",
+      "missing": 0
+    },
+    {
+      "name": "probe_teleported",
+      "role": "quality",
+      "description": "Tracked vehicle named in a teleport warning; blank if simulator log is unavailable",
+      "missing": 0
+    },
+    {
+      "name": "probe_collision",
+      "role": "quality",
+      "description": "Tracked vehicle named in a collision warning; blank if simulator log is unavailable",
+      "missing": 0
+    },
+    {
+      "name": "paired_valid",
+      "role": "quality",
+      "description": "Valid probe and fixed-time reference with matching input hashes",
+      "missing": 0
+    },
+    {
+      "name": "improvement_vs_fixed_percent",
+      "role": "outcome",
+      "description": "Paired travel-time reduction; positive is faster",
+      "missing": 68
+    },
+    {
+      "name": "network_sha256",
+      "role": "provenance",
+      "description": "Network content version",
+      "missing": 0
+    },
+    {
+      "name": "input_sha256",
+      "role": "provenance",
+      "description": "Canonical digest of all frozen simulation input hashes",
+      "missing": 0
+    },
+    {
+      "name": "actual_end_s",
+      "role": "provenance",
+      "description": "Actual observation horizon for this method",
+      "missing": 0
+    },
+    {
+      "name": "inserted_network_vehicles",
+      "role": "quality",
+      "description": "Vehicles actually inserted by run stop",
+      "missing": 0
+    },
+    {
+      "name": "mean_network_speed_mps",
+      "role": "quality",
+      "description": "Network snapshot speed at stop; observation horizons may differ",
+      "missing": 0
+    },
+    {
+      "name": "halted_network_vehicles",
+      "role": "quality",
+      "description": "Vehicles halting at experiment stop",
+      "missing": 0
+    },
+    {
+      "name": "arrived_network_vehicles",
+      "role": "quality",
+      "description": "Vehicles arrived by run stop; windows differ, do not rank raw totals",
+      "missing": 0
+    },
+    {
+      "name": "running_network_vehicles",
+      "role": "quality",
+      "description": "Vehicles still running when experiment stops",
+      "missing": 0
+    },
+    {
+      "name": "pending_network_vehicles",
+      "role": "quality",
+      "description": "Vehicles awaiting insertion when experiment stops",
+      "missing": 0
+    }
+  ],
+  "note": "Rejected runs stay in raw dataset. A technical pilot is not an accepted final dataset."
+}

@@ -1,0 +1,12 @@
+method_id,method,label
+M0,fixed_time,Fixed-time
+M1,switching_loss_mp,Switching-Loss MP
+M2,c_mp,C-MP
+M3,td_mp_2023,TD-MP
+M4,cv_mp_2025,CV-MP
+M5,queue_responsive_2026,Queue-responsive
+M6,cn_mp_2024,CN-MP
+M7,wncn_mp_2024,WNCN-MP
+M8,wstar_ncn_mp_2024,W*NCN-MP
+M9,wstar_cn_mp_2024,W*CN-MP
+M10,coordinated_auction_2024,Coordinated Auction

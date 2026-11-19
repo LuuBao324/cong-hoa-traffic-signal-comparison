@@ -1,0 +1,9 @@
+{
+  "execution_complete": true,
+  "planned_runs": 132,
+  "finished_runs": 132,
+  "accepted": false,
+  "actual_research_runs": 120,
+  "note": "Execution complete does not mean all probes arrived or all simulations are scientifically valid.",
+  "audit_exit_code": 2
+}

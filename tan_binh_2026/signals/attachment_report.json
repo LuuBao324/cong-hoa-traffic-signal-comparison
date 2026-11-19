@@ -1,0 +1,37 @@
+{
+  "source_sha256": "c7de694b2a7421b30237ef02b14bbf45ceed3251f7c8b7cc571b94a83bee58b6",
+  "output": "osm.signals.net.xml.gz",
+  "geometry_and_connection_topology_unchanged": true,
+  "added_controllers": {
+    "survey_CH_18E": [
+      "2079964423",
+      "13817051850",
+      "12834017505"
+    ],
+    "survey_CH_UT_TICH": [
+      "cluster_11323053473_11323053474_2513642427"
+    ],
+    "survey_CH_NGO_BE": [
+      "2079964894"
+    ],
+    "survey_CH_AP_BAC": [
+      "366379261"
+    ],
+    "survey_CH_TKTQ": [
+      "11399978032"
+    ]
+  },
+  "added_controlled_connections": 73,
+  "original_controller_count": 68,
+  "final_controller_count": 73,
+  "survey_timings_applied": false,
+  "program_status": "provisional_netconvert_generated",
+  "yellow_s": 3,
+  "all_red_s": 1,
+  "all_red_status": "assumed_not_surveyed",
+  "unresolved_records": [
+    "CH_AIRPORT",
+    "CH_HVT_ROUNDABOUT"
+  ],
+  "ready_for_algorithm_comparison": false
+}

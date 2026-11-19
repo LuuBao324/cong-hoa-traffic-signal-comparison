@@ -1,0 +1,12 @@
+method,car_center,car_outer,motorcycle_center,motorcycle_outer
+Fixed-time,90.0,114.5625,106.125,117.9375
+Switching-Loss MP,5.083333333333333,44.416666666666664,9.5,20.25
+C-MP,4.25,9.5,21.5,29.75
+TD-MP,76.25,195.25,80.25,197.25
+CV-MP,44.75,62.6875,21.6875,89.5625
+Queue-responsive,36.875,133.3125,49.25,95.6875
+CN-MP,,,,
+WNCN-MP,,,,
+W*NCN-MP,24.5625,36.625,18.75,35.1875
+W*CN-MP,8.625,5.5,6.8125,18.75
+Coordinated Auction,270.75,289.25,280.0,274.75

@@ -1,0 +1,14 @@
+{
+  "source": "User-reported video count, confirmed in this conversation",
+  "location": "Cong Hoa Garden / Duong 20 Cong Hoa",
+  "reported_date": "14 October",
+  "year": null,
+  "time_band": null,
+  "video_duration_s": 600,
+  "approximate_counted_vehicles_one_direction": 3000,
+  "derived_vehicles_per_hour_one_direction": 18000,
+  "experiment_reference_vehicles_per_hour_both_directions": 36000,
+  "opposite_direction_assumption": "Equal demand in both directions",
+  "note": "This counted one-direction total supersedes the earlier visual estimate of 20 vehicles/second. The experiment reference remains 36,000 corridor-related journeys/hour. Frozen simulation inputs retain their original metadata.",
+  "raw_video_or_counting_sheet_archived": false
+}

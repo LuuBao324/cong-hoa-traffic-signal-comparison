@@ -1,0 +1,70 @@
+# Local environments, editors and credentials
+.venv*/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+.env
+.env.*
+.streamlit/secrets.toml
+*.pem
+*.key
+
+# Temporary files and local simulation history
+/tmp/
+/logs/
+/historical/
+/archive/
+/results/
+/.chart-data-*/
+/.dataset-test-*/
+*.log
+*.tmp
+*.bak
+
+# Third-party reading copies; citations are in the registry and docs
+/docs/papers/
+
+# Publish selected network, observations and paper checkpoint
+/tan_binh_2026/*
+!/tan_binh_2026/tan_binh.net.xml.gz
+!/tan_binh_2026/tan_binh.sumocfg
+!/tan_binh_2026/buildings.poly.xml.gz
+!/tan_binh_2026/view.xml
+!/tan_binh_2026/signals/
+!/tan_binh_2026/source/
+/tan_binh_2026/source/*
+!/tan_binh_2026/source/map.osm.xml.gz
+!/tan_binh_2026/source/wizard_original.net.xml.gz
+!/tan_binh_2026/dataset_cong_hoa/
+/tan_binh_2026/dataset_cong_hoa/*
+!/tan_binh_2026/dataset_cong_hoa/checkpoints/
+/tan_binh_2026/dataset_cong_hoa/checkpoints/*
+!/tan_binh_2026/dataset_cong_hoa/checkpoints/132_runs/
+
+# One complete frozen input scenario
+!/tan_binh_2026/dataset_cong_hoa/inputs/
+/tan_binh_2026/dataset_cong_hoa/inputs/*
+!/tan_binh_2026/dataset_cong_hoa/inputs/d0.5_s100/
+/tan_binh_2026/dataset_cong_hoa/inputs/d0.5_s100/*tripinfo.xml
+/tan_binh_2026/dataset_cong_hoa/inputs/d0.5_s100/*summary.xml
+
+# Compact underlying evidence for the checkpoint's 132 runs
+!/tan_binh_2026/dataset_cong_hoa/runs/
+/tan_binh_2026/dataset_cong_hoa/runs/*
+!/tan_binh_2026/dataset_cong_hoa/runs/d0.1_s10[0-3]/
+!/tan_binh_2026/dataset_cong_hoa/runs/d0.5_s10[0-3]/
+!/tan_binh_2026/dataset_cong_hoa/runs/d1_s10[0-3]/
+/tan_binh_2026/dataset_cong_hoa/runs/*/*/*
+!/tan_binh_2026/dataset_cong_hoa/runs/*/*/result.json
+
+# Selected analysis and defense outputs
+/analysis/outputs/*
+!/analysis/outputs/cong_hoa_132_runs/
+/output/*
+!/output/defense/

@@ -1,0 +1,12 @@
+﻿record_id,location,movement,red_s,green_s,yellow_s,all_red_s,tls_id,survey_date,survey_time,status,attachment_status,timing_applied
+CH_HHT,Cộng Hòa - Hoàng Hoa Thám,Cộng Hòa hướng Trường Chinh,35,50,3,,GS_cluster_2146838339_366467129,,,needs_phase_mapping,location_attached_movement_and_full_phases_pending,false
+CH_NGO_BE,Cộng Hòa - Ngô Bệ,Cộng Hòa hướng Trường Chinh,26,53,3,,survey_CH_NGO_BE,,,needs_phase_mapping,location_attached_movement_and_full_phases_pending,false
+CH_AP_BAC,Cộng Hòa - Ấp Bắc,Cộng Hòa hướng Trường Chinh,32,55,3,,survey_CH_AP_BAC,,,confirm_red_green_order_and_phase_mapping,location_attached_movement_and_full_phases_pending,false
+CH_TKTQ,Cộng Hòa - Tân Kỳ Tân Quý,Cộng Hòa hướng Trường Chinh,36,60,3,,survey_CH_TKTQ,,,needs_phase_mapping,location_attached_movement_and_full_phases_pending,false
+CH_AIRPORT,Cộng Hòa - đường vào sân bay,Cộng Hòa hướng Trường Chinh,57,40,3,,,,,needs_exact_location,unresolved_exact_location_or_network_coverage,false
+CH_TRUONG_CHINH_UTURN,Cộng Hòa - Trường Chinh,quay đầu từ chiều Trường Chinh,42,36,3,,cluster_11453123766_11453135175_2079964012_5757491891,,,needs_lane_and_phase_mapping,location_attached_movement_and_full_phases_pending,false
+CH_TRUONG_CHINH_THROUGH,Cộng Hòa - Trường Chinh,thẳng hướng Trường Chinh luôn xanh theo ghi chép,0,,,,cluster_11453123766_11453135175_2079964012_5757491891,,,needs_geometry_and_right_of_way_check,location_attached_movement_and_full_phases_pending,false
+CH_18E,Cộng Hòa - 18E,thẳng hướng Hoàng Văn Thụ,32,,3,,survey_CH_18E,,,needs_green_duration_and_phase_mapping,location_attached_movement_and_full_phases_pending,false
+CH_UT_TICH,Cộng Hòa - Út Tịch,quay đầu từ chiều Hoàng Văn Thụ,41,,3,,survey_CH_UT_TICH,,,needs_green_duration_and_phase_mapping,location_attached_movement_and_full_phases_pending,false
+CH_HVT_ROUNDABOUT,Cộng Hòa - vòng xuyến Hoàng Văn Thụ,thẳng hướng Hoàng Văn Thụ,68,,3,,,,,needs_green_duration_and_phase_mapping,unresolved_exact_location_or_network_coverage,false
+CH_18E_LEFT,Cộng Hòa - 18E,trái từ chiều Hoàng Văn Thụ,67,,3,,survey_CH_18E,,,needs_green_duration_and_phase_mapping,location_attached_movement_and_full_phases_pending,false

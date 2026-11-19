@@ -1,0 +1,28 @@
+{
+  "captured_at": "2026-11-13T11:43:31.041338+00:00",
+  "completed_runs": 132,
+  "probe_rows": 528,
+  "all_four_arrived_runs": 115,
+  "censored_probes": 34,
+  "collisions": 674,
+  "teleports": 674,
+  "event_affected_runs": 95,
+  "probe_teleports": 1,
+  "probe_collisions": 1,
+  "paired_valid_rows": 460,
+  "valid_pairwise_rows": 2088,
+  "total_pairwise_rows": 2640,
+  "accepted": false,
+  "seeds": [
+    100,
+    101,
+    102,
+    103
+  ],
+  "scales": [
+    0.1,
+    0.5,
+    1.0
+  ],
+  "comparison_policy": "all_four_arrived"
+}

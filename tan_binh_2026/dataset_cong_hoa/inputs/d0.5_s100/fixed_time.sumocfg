@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<configuration>
+  <input>
+    <net-file value="network_snapshot.net.xml.gz" />
+    <route-files value="traffic.rou.xml,map_motorcycle.rou.xml,map_car.rou.xml,map_truck.rou.xml,map_bus.rou.xml" />
+    <additional-files value="fixed.add.xml" />
+    <route-steps value="0" />
+  </input>
+  <time>
+    <end value="2400" />
+    <step-length value="0.25" />
+  </time>
+  <processing>
+    <time-to-teleport value="-1" />
+    <collision.mingap-factor value="0" />
+    <collision.check-junctions value="true" />
+    <waiting-time-memory value="2410" />
+  </processing>
+  <random_number>
+    <seed value="100" />
+  </random_number>
+  <output>
+    <tripinfo-output value="tripinfo.xml" />
+    <tripinfo-output.write-unfinished value="true" />
+    <summary-output value="summary.xml" />
+  </output>
+</configuration>

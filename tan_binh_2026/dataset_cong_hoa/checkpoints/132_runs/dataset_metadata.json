@@ -1,0 +1,569 @@
+{
+  "source": "dataset_cong_hoa",
+  "plan": {
+    "planned_runs": 132,
+    "methods": [
+      "fixed_time",
+      "switching_loss_mp",
+      "c_mp",
+      "td_mp_2023",
+      "cv_mp_2025",
+      "queue_responsive_2026",
+      "cn_mp_2024",
+      "wncn_mp_2024",
+      "wstar_ncn_mp_2024",
+      "wstar_cn_mp_2024",
+      "coordinated_auction_2024"
+    ],
+    "scales": [
+      1.0,
+      0.5,
+      0.1
+    ],
+    "seeds": [
+      100,
+      101,
+      102,
+      103
+    ],
+    "end_s": 1600.0,
+    "signature": {
+      "traffic_study/__init__.py": "e62aded6a4604f2bc9b0b5a8c2bf87c7ef659d91d2d0314fc2c4d66bf46fc713",
+      "traffic_study/batch_experiments.py": "60da7799b714780febfca6460d235eae22633e8f4243cba991a69f46d398e47e",
+      "traffic_study/boundary_demand.py": "39fd881023d59a01d33856718cc0d39d683d04365f33dac252a8532d7fee745f",
+      "traffic_study/compare_pressure.py": "55573361ff6e8f5089b07a1c1db8854e7cd060b7478ce8d3bfce482b7d45eecb",
+      "traffic_study/dataset.py": "b686f0f04c15d32d81000a341f993e090cb01ba4521bd02a4c54f8d0ab646f56",
+      "traffic_study/fixed_time_signals.py": "39b073ef2da30b2aa456711240e0874f155aed5823203021db6d58d9155b9ca1",
+      "traffic_study/paper_methods.py": "5d0b727a9891a3ecc456debdb10329bb35e09080d2acac04c0a3226ff7eebd3a",
+      "traffic_study/pressure_controllers.py": "c2996b9d314f9e0ea192749cdce75c628fb41eb4a372fe737d52dffc72d42fdf",
+      "traffic_study/pure_controllers.py": "f5eeaaf881da4cc29d6b15b90e85fd01b2e248f392c632266f499838b5dc2aee",
+      "traffic_study/research_controllers.py": "3ac4bd315a363189d178fd73f5e3e29a33456333ec0bca107230932de7172530",
+      "traffic_study/run_fixed_time.py": "7675598c1ac7e1dc47b08302163587210561c0be3136b989bc72889bf0525210",
+      "traffic_study/vehicle_types.py": "4e44162327b33661838466b8006eda2775cecab12bc3a3e7a0f91b87506224cd",
+      "tan_binh_2026/signals/survey_observations.csv": "0efee55f04712e7b376b7628889d8adf06693b6962599e558e6e19e537834526",
+      "tan_binh_2026/tan_binh.net.xml.gz": "d71898dad6ff887517f1b96721f28be67d3cefde3dfa3a75552040a2a44953ab",
+      "package:libsumo": "1.28.0",
+      "package:traci": "1.28.0",
+      "package:sumolib": "1.28.0",
+      "package:sumo-data": "1.28.0",
+      "package:eclipse-sumo": "1.28.0",
+      "end_s": 1600.0
+    },
+    "status": "complete",
+    "comparison_policy": "all_four_arrived",
+    "research_methods": [
+      "switching_loss_mp",
+      "c_mp",
+      "td_mp_2023",
+      "cv_mp_2025",
+      "queue_responsive_2026",
+      "cn_mp_2024",
+      "wncn_mp_2024",
+      "wstar_ncn_mp_2024",
+      "wstar_cn_mp_2024",
+      "coordinated_auction_2024"
+    ],
+    "papers": {
+      "switching_loss_mp": {
+        "year": 2025,
+        "title": "Max-Pressure Controller for Traffic Networks Considering the Phase Switching Loss",
+        "url": "https://doi.org/10.3390/su17104492",
+        "section": "Eq.5,7,8",
+        "family": "pressure",
+        "requires_training": false,
+        "uses_rl": false,
+        "algorithm_status": "published_nonlearning_model_with_documented_SUMO_adapter"
+      },
+      "c_mp": {
+        "year": 2025,
+        "title": "C-MP: A decentralized adaptive-coordinated traffic signal control using the Max Pressure framework",
+        "url": "https://doi.org/10.1016/j.trb.2025.103308",
+        "section": "Eq.6–8",
+        "family": "pressure",
+        "requires_training": false,
+        "uses_rl": false,
+        "algorithm_status": "published_nonlearning_model_with_documented_SUMO_adapter"
+      },
+      "td_mp_2023": {
+        "year": 2023,
+        "title": "Total-delay-based Max Pressure: A Max Pressure Algorithm Considering Delay Equity",
+        "url": "https://doi.org/10.1177/03611981221147051",
+        "section": "Eq.7, downstream delay over preceding decision window",
+        "family": "pressure",
+        "requires_training": false,
+        "uses_rl": false,
+        "algorithm_status": "published_nonlearning_model_with_documented_SUMO_adapter"
+      },
+      "cv_mp_2025": {
+        "year": 2025,
+        "title": "CV-MP: Max-Pressure Control in Heterogeneously Distributed and Partially Connected Vehicle Environments",
+        "url": "https://arxiv.org/abs/2505.05258",
+        "section": "Eq.8–9, fully connected observation scenario",
+        "family": "pressure",
+        "publication_type": "preprint",
+        "requires_training": false,
+        "uses_rl": false,
+        "algorithm_status": "published_nonlearning_model_with_documented_SUMO_adapter"
+      },
+      "queue_responsive_2026": {
+        "year": 2026,
+        "title": "Queue-Responsive Adaptive Signal Control vs. Webster Optimization: A Multi-Criteria Simulation Assessment at a Signalized Intersection",
+        "url": "https://doi.org/10.3390/futuretransp6020092",
+        "section": "Section 2.4.3, Algorithm 1; queue-responsive branch ONLY",
+        "family": "queue_responsive",
+        "requires_training": false,
+        "uses_rl": false,
+        "algorithm_status": "published_nonlearning_model_with_documented_SUMO_adapter"
+      },
+      "cn_mp_2024": {
+        "year": 2024,
+        "title": "A Modified Pressure Model for Max-Pressure Traffic Signal Control",
+        "url": "https://doi.org/10.23919/ECC64448.2024.10590907",
+        "full_text": "https://www.paperhost.org/proceedings/controls/ECC24/files/0414.pdf",
+        "section": "CN-MP, Eq.4/6; Section IV first experiment",
+        "family": "lane_normalized_pressure",
+        "variant": "CN-MP",
+        "requires_training": false,
+        "uses_rl": false,
+        "algorithm_status": "published_nonlearning_model_with_documented_SUMO_adapter"
+      },
+      "wncn_mp_2024": {
+        "year": 2024,
+        "title": "A Modified Pressure Model for Max-Pressure Traffic Signal Control",
+        "url": "https://doi.org/10.23919/ECC64448.2024.10590907",
+        "full_text": "https://www.paperhost.org/proceedings/controls/ECC24/files/0414.pdf",
+        "section": "WNCN-MP, Eq.4/7; Section IV first experiment",
+        "family": "lane_normalized_pressure",
+        "variant": "WNCN-MP",
+        "requires_training": false,
+        "uses_rl": false,
+        "algorithm_status": "published_nonlearning_model_with_documented_SUMO_adapter"
+      },
+      "wstar_ncn_mp_2024": {
+        "year": 2024,
+        "title": "A Modified Pressure Model for Max-Pressure Traffic Signal Control",
+        "url": "https://doi.org/10.23919/ECC64448.2024.10590907",
+        "full_text": "https://www.paperhost.org/proceedings/controls/ECC24/files/0414.pdf",
+        "section": "W*NCN-MP, Eq.8/7; Section IV capacity-aware experiment",
+        "family": "lane_normalized_pressure",
+        "variant": "W*NCN-MP",
+        "requires_training": false,
+        "uses_rl": false,
+        "algorithm_status": "published_nonlearning_model_with_documented_SUMO_adapter"
+      },
+      "wstar_cn_mp_2024": {
+        "year": 2024,
+        "title": "A Modified Pressure Model for Max-Pressure Traffic Signal Control",
+        "url": "https://doi.org/10.23919/ECC64448.2024.10590907",
+        "full_text": "https://www.paperhost.org/proceedings/controls/ECC24/files/0414.pdf",
+        "section": "W*CN-MP, Eq.8/6; Section IV capacity-aware experiment",
+        "family": "lane_normalized_pressure",
+        "variant": "W*CN-MP",
+        "requires_training": false,
+        "uses_rl": false,
+        "algorithm_status": "published_nonlearning_model_with_documented_SUMO_adapter"
+      },
+      "coordinated_auction_2024": {
+        "year": 2024,
+        "title": "Exploiting Traffic Light Coordination and Auctions for Intersection and Emergency Vehicle Management in a Smart City Mixed Scenario",
+        "url": "https://doi.org/10.3390/s24072036",
+        "section": "Section 3, Algorithms 1–3; coordinated auctions with bid propagation",
+        "family": "auction",
+        "requires_training": false,
+        "uses_rl": false,
+        "algorithm_status": "published_nonlearning_model_with_documented_SUMO_adapter"
+      }
+    },
+    "target_note": "120 research runs and 12 fixed-time references.",
+    "protocol": "pure_nonrl_v1",
+    "distinct_papers": 7,
+    "demand_reference": {
+      "estimated_corridor_passage_vps_both_directions": 20,
+      "reference_corridor_related_requested_vph": 36000,
+      "observation_duration_s": 600,
+      "corridor_vph_forward": 0,
+      "reverse_ratio": 1.0,
+      "corridor_vph_reverse": 0,
+      "background_vph": 67500.0,
+      "background_multiplier": 1.0,
+      "total_requested_vph": 67500,
+      "direct_corridor_share": 0.0,
+      "source": "Map-wide ordinary traffic; four tracked corridor journeys. Passage target estimated from a ten-minute video; total map demand is a separate assumption."
+    },
+    "run_kind": "experiment",
+    "completed_runs": 132,
+    "failed_cases": [
+      {
+        "scale": 0.5,
+        "seed": 100,
+        "exit_code": 1
+      }
+    ]
+  },
+  "issues": [],
+  "export_code_sha256": "b686f0f04c15d32d81000a341f993e090cb01ba4521bd02a4c54f8d0ab646f56",
+  "schema": [
+    {
+      "name": "run_id",
+      "role": "provenance",
+      "description": "One simulation run; four probes belong to the same run",
+      "missing": 0
+    },
+    {
+      "name": "scenario",
+      "role": "provenance",
+      "description": "Shared demand and seed input configuration",
+      "missing": 0
+    },
+    {
+      "name": "probe_id",
+      "role": "provenance",
+      "description": "Tracked vehicle identifier",
+      "missing": 0
+    },
+    {
+      "name": "method",
+      "role": "input",
+      "description": "Controller, not a learned feature",
+      "missing": 0
+    },
+    {
+      "name": "is_reference",
+      "role": "provenance",
+      "description": "True for the extra shared fixed-time baseline",
+      "missing": 0
+    },
+    {
+      "name": "backend",
+      "role": "provenance",
+      "description": "Simulator API/backend",
+      "missing": 0
+    },
+    {
+      "name": "engine_version",
+      "role": "provenance",
+      "description": "Actual simulator version reported by the running backend",
+      "missing": 0
+    },
+    {
+      "name": "simulation_step_s",
+      "role": "provenance",
+      "description": "Numerical simulation step length in seconds",
+      "missing": 0
+    },
+    {
+      "name": "stop_reason",
+      "role": "quality",
+      "description": "All tracked probes arrived, or simulation guard reached",
+      "missing": 0
+    },
+    {
+      "name": "phase_switches",
+      "role": "outcome",
+      "description": "Controller switches across the network up to stop; unequal windows",
+      "missing": 48
+    },
+    {
+      "name": "controller_exercised",
+      "role": "quality",
+      "description": "False for QD runs that only used the initial/fallback plan",
+      "missing": 0
+    },
+    {
+      "name": "demand_scale",
+      "role": "input",
+      "description": "Demand multiplier; assumed, not observed traffic",
+      "missing": 0
+    },
+    {
+      "name": "seed",
+      "role": "provenance",
+      "description": "Paired random seed; not a traffic measurement",
+      "missing": 0
+    },
+    {
+      "name": "vehicle_type",
+      "role": "input",
+      "description": "Probe class",
+      "missing": 0
+    },
+    {
+      "name": "vehicle_movement_model",
+      "role": "input",
+      "description": "Recorded movement model; unspecified for legacy runs",
+      "missing": 0
+    },
+    {
+      "name": "lane_change_model",
+      "role": "input",
+      "description": "Recorded SUMO lane-changing model",
+      "missing": 0
+    },
+    {
+      "name": "route_variant",
+      "role": "input",
+      "description": "Fixed center/outer probe path",
+      "missing": 0
+    },
+    {
+      "name": "corridor_vph_per_direction",
+      "role": "input",
+      "description": "Explicitly assigned corridor background vehicles/hour/direction",
+      "missing": 0
+    },
+    {
+      "name": "corridor_requested_vph_forward",
+      "role": "input",
+      "description": "Explicitly assigned corridor background vehicles/hour towards Truong Chinh",
+      "missing": 0
+    },
+    {
+      "name": "corridor_requested_vph_reverse",
+      "role": "input",
+      "description": "Explicitly assigned corridor background vehicles/hour in the opposite direction",
+      "missing": 0
+    },
+    {
+      "name": "map_requested_vph",
+      "role": "input",
+      "description": "Requested background vehicles/hour, whole map",
+      "missing": 0
+    },
+    {
+      "name": "corridor_related_requested_vph",
+      "role": "input",
+      "description": "Requested journeys/hour using any Cong Hoa segment; includes side-road entry and exit journeys",
+      "missing": 0
+    },
+    {
+      "name": "corridor_related_generated_vehicles",
+      "role": "input",
+      "description": "Generated ordinary journeys using any Cong Hoa segment during the demand window",
+      "missing": 0
+    },
+    {
+      "name": "map_generated_vehicles",
+      "role": "input",
+      "description": "Generated background vehicles during demand window; not actually inserted",
+      "missing": 0
+    },
+    {
+      "name": "map_generation_ratio",
+      "role": "quality",
+      "description": "Generated / requested background vehicles during demand window; routing losses, not completion rate",
+      "missing": 0
+    },
+    {
+      "name": "demand_duration_s",
+      "role": "input",
+      "description": "Demand generation window (s)",
+      "missing": 0
+    },
+    {
+      "name": "probe_requested_depart_s",
+      "role": "input",
+      "description": "Scheduled probe departure (s)",
+      "missing": 0
+    },
+    {
+      "name": "motorcycle_share",
+      "role": "input",
+      "description": "Requested corridor motorcycle proportion",
+      "missing": 0
+    },
+    {
+      "name": "car_share",
+      "role": "input",
+      "description": "Requested corridor passenger-car proportion",
+      "missing": 0
+    },
+    {
+      "name": "truck_share",
+      "role": "input",
+      "description": "Requested corridor truck proportion",
+      "missing": 0
+    },
+    {
+      "name": "bus_share",
+      "role": "input",
+      "description": "Requested corridor bus proportion",
+      "missing": 0
+    },
+    {
+      "name": "travel_time_s",
+      "role": "outcome",
+      "description": "Actual insertion to arrival; excludes departure delay",
+      "missing": 34
+    },
+    {
+      "name": "waiting_time_s",
+      "role": "outcome",
+      "description": "Waiting within trip, already part of travel time",
+      "missing": 0
+    },
+    {
+      "name": "depart_delay_s",
+      "role": "outcome",
+      "description": "Delay before insertion; separate from travel time",
+      "missing": 0
+    },
+    {
+      "name": "route_length_m",
+      "role": "outcome",
+      "description": "Distance actually traveled from SUMO tripinfo (m)",
+      "missing": 34
+    },
+    {
+      "name": "mean_speed_kmh",
+      "role": "outcome",
+      "description": "Actual route length / trip duration × 3.6",
+      "missing": 34
+    },
+    {
+      "name": "time_loss_s",
+      "role": "outcome",
+      "description": "SUMO timeLoss, not equal to waitingTime",
+      "missing": 34
+    },
+    {
+      "name": "waiting_count",
+      "role": "outcome",
+      "description": "SUMO waitingCount",
+      "missing": 34
+    },
+    {
+      "name": "collisions",
+      "role": "quality",
+      "description": "Whole-run collision count up to stop",
+      "missing": 0
+    },
+    {
+      "name": "teleports",
+      "role": "quality",
+      "description": "Whole-run teleport count up to stop",
+      "missing": 0
+    },
+    {
+      "name": "completed",
+      "role": "quality",
+      "description": "Probe arrival recorded",
+      "missing": 0
+    },
+    {
+      "name": "censored",
+      "role": "quality",
+      "description": "Probe has no recorded arrival at experiment stop",
+      "missing": 0
+    },
+    {
+      "name": "departed",
+      "role": "quality",
+      "description": "Probe was actually inserted into the network",
+      "missing": 0
+    },
+    {
+      "name": "valid_for_comparison",
+      "role": "quality",
+      "description": "Eligibility under the saved comparison policy; all_four_arrived permits runs with flagged events",
+      "missing": 0
+    },
+    {
+      "name": "clean_run",
+      "role": "quality",
+      "description": "Original strict check including zero whole-run collisions and teleports",
+      "missing": 0
+    },
+    {
+      "name": "all_four_arrived",
+      "role": "quality",
+      "description": "All four distinct tracked vehicles recorded positive completed trip durations",
+      "missing": 0
+    },
+    {
+      "name": "probe_teleported",
+      "role": "quality",
+      "description": "Tracked vehicle named in a teleport warning; blank if simulator log is unavailable",
+      "missing": 0
+    },
+    {
+      "name": "probe_collision",
+      "role": "quality",
+      "description": "Tracked vehicle named in a collision warning; blank if simulator log is unavailable",
+      "missing": 0
+    },
+    {
+      "name": "paired_valid",
+      "role": "quality",
+      "description": "Valid probe and fixed-time reference with matching input hashes",
+      "missing": 0
+    },
+    {
+      "name": "improvement_vs_fixed_percent",
+      "role": "outcome",
+      "description": "Paired travel-time reduction; positive is faster",
+      "missing": 68
+    },
+    {
+      "name": "network_sha256",
+      "role": "provenance",
+      "description": "Network content version",
+      "missing": 0
+    },
+    {
+      "name": "input_sha256",
+      "role": "provenance",
+      "description": "Canonical digest of all frozen simulation input hashes",
+      "missing": 0
+    },
+    {
+      "name": "actual_end_s",
+      "role": "provenance",
+      "description": "Actual observation horizon for this method",
+      "missing": 0
+    },
+    {
+      "name": "inserted_network_vehicles",
+      "role": "quality",
+      "description": "Vehicles actually inserted by run stop",
+      "missing": 0
+    },
+    {
+      "name": "mean_network_speed_mps",
+      "role": "quality",
+      "description": "Network snapshot speed at stop; observation horizons may differ",
+      "missing": 0
+    },
+    {
+      "name": "halted_network_vehicles",
+      "role": "quality",
+      "description": "Vehicles halting at experiment stop",
+      "missing": 0
+    },
+    {
+      "name": "arrived_network_vehicles",
+      "role": "quality",
+      "description": "Vehicles arrived by run stop; windows differ, do not rank raw totals",
+      "missing": 0
+    },
+    {
+      "name": "running_network_vehicles",
+      "role": "quality",
+      "description": "Vehicles still running when experiment stops",
+      "missing": 0
+    },
+    {
+      "name": "pending_network_vehicles",
+      "role": "quality",
+      "description": "Vehicles awaiting insertion when experiment stops",
+      "missing": 0
+    }
+  ],
+  "notes": [
+    "Comparison policy: all_four_arrived. Quality flags remain recorded independently.",
+    "Demand levels are estimated reference inputs.",
+    "Runs stop when the tracked vehicles arrive or the time limit is reached.",
+    "Four tracked vehicles in one run share the same random seed.",
+    "Travel time starts at actual network insertion and excludes departure delay.",
+    "Each result records its signal transition policy."
+  ]
+}

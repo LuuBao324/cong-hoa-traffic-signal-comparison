@@ -1,0 +1,29 @@
+{
+  "source_checkpoint": "tan_binh_2026\\dataset_cong_hoa\\checkpoints\\132_runs",
+  "source_sha256": {
+    "dataset.csv": "f0f8ffa2f67111f00ae1c3343b0034a42dd8977efdd1c9f5cb062ae1c57f0320",
+    "summary.csv": "f97cb3c7c6023465b77ff56c4e428ff6f9d3d4aba05b7e76299e7116220a7f47",
+    "pairwise.csv": "16caed6c0f6db4eb59c8bf9bd7d439cb4e08adede10299a96dd600f2c1cfb1b5",
+    "plan.json": "5382d37063d7987cad005a64d32434f4850613ee6683823b46d84374e7380e96",
+    "acceptance.json": "26c355ae91ed02ed2c580136955b92c1e30e8ed88f00a627fa50dc64211f4b0d"
+  },
+  "source_accepted": false,
+  "comparison_policy": "all_four_arrived",
+  "run_count": 132,
+  "probe_count": 528,
+  "seed_count": 4,
+  "focus": {
+    "scale": 0.5,
+    "vehicle": "car",
+    "path": "outer"
+  },
+  "packages": {
+    "pandas": "3.0.5",
+    "numpy": "2.5.3",
+    "matplotlib": "3.11.2",
+    "nbformat": "5.11.1",
+    "nbclient": "0.11.0",
+    "ipykernel": "7.4.0",
+    "libsumo": "1.28.0"
+  }
+}

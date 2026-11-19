@@ -1,0 +1,13 @@
+demand_scale,method,probe_id,vehicle_type,route_variant,planned_seeds,completed_probes,valid_seeds,mean_travel_time_s,std_travel_time_s,mean_waiting_time_s,std_waiting_time_s,mean_time_loss_s,mean_waiting_count,mean_depart_delay_s,paired_valid_seeds,mean_improvement_vs_fixed_percent
+0.1,fixed_time,probe_car,car,outer,4,4,4,315.3125,0.239356776939087,97.9375,7.635921140678881,126.375,3.0,0.0,4,0.0
+0.1,fixed_time,probe_car_center,car,center,4,4,4,315.0625,0.4269562819149763,87.9375,0.42695628191498325,125.51,3.0,0.5,4,0.0
+0.1,fixed_time,probe_motorcycle,motorcycle,outer,4,4,4,313.0625,0.6250000000000048,108.6875,2.1542109924517625,123.96000000000001,3.0,0.0,4,0.0
+0.1,fixed_time,probe_motorcycle_center,motorcycle,center,4,4,4,312.25,0.0,108.6875,0.23935677693908453,122.6125,3.0,0.5,4,0.0
+0.5,fixed_time,probe_car,car,outer,4,4,4,315.0625,0.3749999999999984,101.0,1.9685019685029537,126.17750000000001,3.0,0.0,4,0.0
+0.5,fixed_time,probe_car_center,car,center,4,4,4,315.0625,0.12499999999999525,86.8125,1.125,125.5875,3.0,0.5,4,0.0
+0.5,fixed_time,probe_motorcycle,motorcycle,outer,4,4,4,314.3125,0.625,103.1875,2.882237267586879,125.19749999999999,3.0,0.0,4,0.0
+0.5,fixed_time,probe_motorcycle_center,motorcycle,center,4,4,4,312.375,0.14433756729740643,108.875,0.14433756729740643,122.595,3.0,0.5,4,0.0
+1.0,fixed_time,probe_car,car,outer,4,4,4,346.5625,45.94851058521918,114.5625,49.95680425794535,157.66,3.75,0.0,4,0.0
+1.0,fixed_time,probe_car_center,car,center,4,4,4,314.9375,0.23935677693908453,90.0,4.173328008516304,125.47999999999999,3.0,0.5,4,0.0
+1.0,fixed_time,probe_motorcycle,motorcycle,outer,4,4,4,344.4375,48.27239333545969,117.9375,45.50795489069282,155.32750000000001,4.25,0.0,4,0.0
+1.0,fixed_time,probe_motorcycle_center,motorcycle,center,4,4,4,313.25,2.0,106.125,5.421792446537706,123.5975,3.25,0.5,4,0.0

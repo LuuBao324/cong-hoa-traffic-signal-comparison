@@ -1,0 +1,12 @@
+method,car_center,car_outer,motorcycle_center,motorcycle_outer
+Fixed-time,4,4,4,4
+Switching-Loss MP,3,3,3,3
+C-MP,1,1,1,1
+TD-MP,1,1,1,1
+CV-MP,4,4,4,4
+Queue-responsive,4,4,4,4
+CN-MP,0,0,0,0
+WNCN-MP,0,0,0,0
+W*NCN-MP,4,4,4,4
+W*CN-MP,4,4,4,4
+Coordinated Auction,2,2,2,2

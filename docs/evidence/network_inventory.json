@@ -1,0 +1,122 @@
+{
+  "generated_utc": "2026-11-13T07:27:50.678972+00:00",
+  "frozen_network": {
+    "non_internal_junctions": 15339,
+    "normal_directed_edges": 36541,
+    "normal_lanes": 38854,
+    "study_vehicle_usable_nodes": 8237,
+    "study_vehicle_usable_edges": 17073,
+    "study_vehicle_usable_lanes": 19385,
+    "unique_signal_controllers": 74,
+    "signalised_junction_nodes": 84,
+    "switching_controllers": 72,
+    "constant_green_controllers": [
+      "11399978019",
+      "237480053#3-AddedOnRampNode"
+    ],
+    "junction_types": {
+      "priority": 11724,
+      "right_before_left": 3480,
+      "traffic_light": 84,
+      "dead_end": 51
+    },
+    "georeference": {
+      "netOffset": "-676800.10,-1191060.14",
+      "convBoundary": "0.00,0.00,7570.74,8332.09",
+      "origBoundary": "106.617355,10.770333,106.686481,10.845526",
+      "projParameter": "+proj=utm +zone=48 +ellps=WGS84 +datum=WGS84 +units=m +no_defs"
+    }
+  },
+  "original_wizard_network": {
+    "non_internal_junctions": 15345,
+    "normal_directed_edges": 36553,
+    "normal_lanes": 38866,
+    "study_vehicle_usable_nodes": 8243,
+    "study_vehicle_usable_edges": 17085,
+    "study_vehicle_usable_lanes": 19397,
+    "unique_signal_controllers": 68,
+    "signalised_junction_nodes": 78,
+    "switching_controllers": 68,
+    "constant_green_controllers": [],
+    "junction_types": {
+      "priority": 11736,
+      "right_before_left": 3480,
+      "traffic_light": 78,
+      "dead_end": 51
+    },
+    "georeference": {
+      "netOffset": "-676800.10,-1191060.14",
+      "convBoundary": "0.00,0.00,7570.74,8332.09",
+      "origBoundary": "106.617355,10.770333,106.686481,10.845526",
+      "projParameter": "+proj=utm +zone=48 +ellps=WGS84 +datum=WGS84 +units=m +no_defs"
+    }
+  },
+  "original_wizard_generation": {
+    "timestamp": "2026-10-09T13:34:37.592661+07:00",
+    "netconvert_version": "1.27.1"
+  },
+  "original_import_options": {
+    "type-files": "${SUMO_HOME}\\data\\typemap\\osmNetconvert.typ.xml",
+    "osm-files": "osm_bbox.osm.xml.gz",
+    "output-file": "osm.net.xml.gz",
+    "output.street-names": "true",
+    "output.original-names": "true",
+    "proj.utm": "true",
+    "geometry.remove": "true",
+    "tls.discard-simple": "true",
+    "tls.join": "true",
+    "tls.guess-signals": "true",
+    "tls.default-type": "actuated",
+    "ramps.guess": "true",
+    "junctions.join": "true"
+  },
+  "osm_extract": {
+    "snapshot_utc": "2026-06-01T08:52:28Z",
+    "nodes": 76792,
+    "ways": 19294,
+    "signal_tagged_nodes": 308
+  },
+  "signal_position_origins": {
+    "original_wizard_controller": 25,
+    "post_import_edit": 6,
+    "wizard_signal_inference_GS_prefix": 43
+  },
+  "programme_timing_sources": {
+    "assumed_default": 66,
+    "survey_informed": 8
+  },
+  "controllers_added_after_original_import": [
+    "237480053#3-AddedOnRampNode",
+    "cluster11399978032_13817051828_2533900283",
+    "cluster12834017505_13817051850_2079964423",
+    "cluster13817051847_2079964894_366379261",
+    "survey_CH_HVT_ENTRY",
+    "survey_CH_UT_TICH"
+  ],
+  "field_timing_register": {
+    "movement_records": 14,
+    "named_locations": 9,
+    "records_with_survey_date": 0,
+    "records_with_survey_time": 0
+  },
+  "runtime_packages": {
+    "sumolib": "1.28.0",
+    "traci": "1.28.0",
+    "libsumo": "1.28.0",
+    "eclipse-sumo": "1.28.0"
+  },
+  "source_files": {
+    "tan_binh_2026\\dataset_cong_hoa\\inputs\\d1_s102\\network_snapshot.net.xml.gz": "155be673e3641c2c794216362e00f665b1629d8727341df2d4e668c92fb2275b",
+    "tan_binh_2026\\source\\wizard_original.net.xml.gz": "c7de694b2a7421b30237ef02b14bbf45ceed3251f7c8b7cc571b94a83bee58b6",
+    "tan_binh_2026\\source\\map.osm.xml.gz": "c60959337490c596e8374678d2817b185df8be81f6275d99bad2fcec57340205",
+    "tan_binh_2026\\dataset_cong_hoa\\inputs\\d1_s102\\signal_plan.json": "0698358d02d7a2a4f0734e88d884d6e59653b958ce58a98140619b1c49c225bf",
+    "tan_binh_2026\\signals\\survey_observations.csv": "0efee55f04712e7b376b7628889d8adf06693b6962599e558e6e19e537834526"
+  },
+  "definitions": {
+    "junctions": "SUMO junction records excluding internal junctions.",
+    "edges": "Non-internal directed edges, including representations outside the study-vehicle subgraph.",
+    "usable": "At least one study vehicle class is permitted on an individual lane wide enough for its body.",
+    "controllers": "Unique tlLogic IDs. A controller may serve several signalised junction nodes.",
+    "positions": "Position provenance records the model construction history. Survey-informed timing records identify the timing source."
+  }
+}

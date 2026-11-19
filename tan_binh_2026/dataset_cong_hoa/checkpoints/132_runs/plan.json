@@ -1,0 +1,200 @@
+{
+  "planned_runs": 132,
+  "methods": [
+    "fixed_time",
+    "switching_loss_mp",
+    "c_mp",
+    "td_mp_2023",
+    "cv_mp_2025",
+    "queue_responsive_2026",
+    "cn_mp_2024",
+    "wncn_mp_2024",
+    "wstar_ncn_mp_2024",
+    "wstar_cn_mp_2024",
+    "coordinated_auction_2024"
+  ],
+  "scales": [
+    1.0,
+    0.5,
+    0.1
+  ],
+  "seeds": [
+    100,
+    101,
+    102,
+    103
+  ],
+  "end_s": 1600.0,
+  "signature": {
+    "traffic_study/__init__.py": "e62aded6a4604f2bc9b0b5a8c2bf87c7ef659d91d2d0314fc2c4d66bf46fc713",
+    "traffic_study/batch_experiments.py": "60da7799b714780febfca6460d235eae22633e8f4243cba991a69f46d398e47e",
+    "traffic_study/boundary_demand.py": "39fd881023d59a01d33856718cc0d39d683d04365f33dac252a8532d7fee745f",
+    "traffic_study/compare_pressure.py": "55573361ff6e8f5089b07a1c1db8854e7cd060b7478ce8d3bfce482b7d45eecb",
+    "traffic_study/dataset.py": "b686f0f04c15d32d81000a341f993e090cb01ba4521bd02a4c54f8d0ab646f56",
+    "traffic_study/fixed_time_signals.py": "39b073ef2da30b2aa456711240e0874f155aed5823203021db6d58d9155b9ca1",
+    "traffic_study/paper_methods.py": "5d0b727a9891a3ecc456debdb10329bb35e09080d2acac04c0a3226ff7eebd3a",
+    "traffic_study/pressure_controllers.py": "c2996b9d314f9e0ea192749cdce75c628fb41eb4a372fe737d52dffc72d42fdf",
+    "traffic_study/pure_controllers.py": "f5eeaaf881da4cc29d6b15b90e85fd01b2e248f392c632266f499838b5dc2aee",
+    "traffic_study/research_controllers.py": "3ac4bd315a363189d178fd73f5e3e29a33456333ec0bca107230932de7172530",
+    "traffic_study/run_fixed_time.py": "7675598c1ac7e1dc47b08302163587210561c0be3136b989bc72889bf0525210",
+    "traffic_study/vehicle_types.py": "4e44162327b33661838466b8006eda2775cecab12bc3a3e7a0f91b87506224cd",
+    "tan_binh_2026/signals/survey_observations.csv": "0efee55f04712e7b376b7628889d8adf06693b6962599e558e6e19e537834526",
+    "tan_binh_2026/tan_binh.net.xml.gz": "d71898dad6ff887517f1b96721f28be67d3cefde3dfa3a75552040a2a44953ab",
+    "package:libsumo": "1.28.0",
+    "package:traci": "1.28.0",
+    "package:sumolib": "1.28.0",
+    "package:sumo-data": "1.28.0",
+    "package:eclipse-sumo": "1.28.0",
+    "end_s": 1600.0
+  },
+  "status": "complete",
+  "comparison_policy": "all_four_arrived",
+  "research_methods": [
+    "switching_loss_mp",
+    "c_mp",
+    "td_mp_2023",
+    "cv_mp_2025",
+    "queue_responsive_2026",
+    "cn_mp_2024",
+    "wncn_mp_2024",
+    "wstar_ncn_mp_2024",
+    "wstar_cn_mp_2024",
+    "coordinated_auction_2024"
+  ],
+  "papers": {
+    "switching_loss_mp": {
+      "year": 2025,
+      "title": "Max-Pressure Controller for Traffic Networks Considering the Phase Switching Loss",
+      "url": "https://doi.org/10.3390/su17104492",
+      "section": "Eq.5,7,8",
+      "family": "pressure",
+      "requires_training": false,
+      "uses_rl": false,
+      "algorithm_status": "published_nonlearning_model_with_documented_SUMO_adapter"
+    },
+    "c_mp": {
+      "year": 2025,
+      "title": "C-MP: A decentralized adaptive-coordinated traffic signal control using the Max Pressure framework",
+      "url": "https://doi.org/10.1016/j.trb.2025.103308",
+      "section": "Eq.6–8",
+      "family": "pressure",
+      "requires_training": false,
+      "uses_rl": false,
+      "algorithm_status": "published_nonlearning_model_with_documented_SUMO_adapter"
+    },
+    "td_mp_2023": {
+      "year": 2023,
+      "title": "Total-delay-based Max Pressure: A Max Pressure Algorithm Considering Delay Equity",
+      "url": "https://doi.org/10.1177/03611981221147051",
+      "section": "Eq.7, downstream delay over preceding decision window",
+      "family": "pressure",
+      "requires_training": false,
+      "uses_rl": false,
+      "algorithm_status": "published_nonlearning_model_with_documented_SUMO_adapter"
+    },
+    "cv_mp_2025": {
+      "year": 2025,
+      "title": "CV-MP: Max-Pressure Control in Heterogeneously Distributed and Partially Connected Vehicle Environments",
+      "url": "https://arxiv.org/abs/2505.05258",
+      "section": "Eq.8–9, fully connected observation scenario",
+      "family": "pressure",
+      "publication_type": "preprint",
+      "requires_training": false,
+      "uses_rl": false,
+      "algorithm_status": "published_nonlearning_model_with_documented_SUMO_adapter"
+    },
+    "queue_responsive_2026": {
+      "year": 2026,
+      "title": "Queue-Responsive Adaptive Signal Control vs. Webster Optimization: A Multi-Criteria Simulation Assessment at a Signalized Intersection",
+      "url": "https://doi.org/10.3390/futuretransp6020092",
+      "section": "Section 2.4.3, Algorithm 1; queue-responsive branch ONLY",
+      "family": "queue_responsive",
+      "requires_training": false,
+      "uses_rl": false,
+      "algorithm_status": "published_nonlearning_model_with_documented_SUMO_adapter"
+    },
+    "cn_mp_2024": {
+      "year": 2024,
+      "title": "A Modified Pressure Model for Max-Pressure Traffic Signal Control",
+      "url": "https://doi.org/10.23919/ECC64448.2024.10590907",
+      "full_text": "https://www.paperhost.org/proceedings/controls/ECC24/files/0414.pdf",
+      "section": "CN-MP, Eq.4/6; Section IV first experiment",
+      "family": "lane_normalized_pressure",
+      "variant": "CN-MP",
+      "requires_training": false,
+      "uses_rl": false,
+      "algorithm_status": "published_nonlearning_model_with_documented_SUMO_adapter"
+    },
+    "wncn_mp_2024": {
+      "year": 2024,
+      "title": "A Modified Pressure Model for Max-Pressure Traffic Signal Control",
+      "url": "https://doi.org/10.23919/ECC64448.2024.10590907",
+      "full_text": "https://www.paperhost.org/proceedings/controls/ECC24/files/0414.pdf",
+      "section": "WNCN-MP, Eq.4/7; Section IV first experiment",
+      "family": "lane_normalized_pressure",
+      "variant": "WNCN-MP",
+      "requires_training": false,
+      "uses_rl": false,
+      "algorithm_status": "published_nonlearning_model_with_documented_SUMO_adapter"
+    },
+    "wstar_ncn_mp_2024": {
+      "year": 2024,
+      "title": "A Modified Pressure Model for Max-Pressure Traffic Signal Control",
+      "url": "https://doi.org/10.23919/ECC64448.2024.10590907",
+      "full_text": "https://www.paperhost.org/proceedings/controls/ECC24/files/0414.pdf",
+      "section": "W*NCN-MP, Eq.8/7; Section IV capacity-aware experiment",
+      "family": "lane_normalized_pressure",
+      "variant": "W*NCN-MP",
+      "requires_training": false,
+      "uses_rl": false,
+      "algorithm_status": "published_nonlearning_model_with_documented_SUMO_adapter"
+    },
+    "wstar_cn_mp_2024": {
+      "year": 2024,
+      "title": "A Modified Pressure Model for Max-Pressure Traffic Signal Control",
+      "url": "https://doi.org/10.23919/ECC64448.2024.10590907",
+      "full_text": "https://www.paperhost.org/proceedings/controls/ECC24/files/0414.pdf",
+      "section": "W*CN-MP, Eq.8/6; Section IV capacity-aware experiment",
+      "family": "lane_normalized_pressure",
+      "variant": "W*CN-MP",
+      "requires_training": false,
+      "uses_rl": false,
+      "algorithm_status": "published_nonlearning_model_with_documented_SUMO_adapter"
+    },
+    "coordinated_auction_2024": {
+      "year": 2024,
+      "title": "Exploiting Traffic Light Coordination and Auctions for Intersection and Emergency Vehicle Management in a Smart City Mixed Scenario",
+      "url": "https://doi.org/10.3390/s24072036",
+      "section": "Section 3, Algorithms 1–3; coordinated auctions with bid propagation",
+      "family": "auction",
+      "requires_training": false,
+      "uses_rl": false,
+      "algorithm_status": "published_nonlearning_model_with_documented_SUMO_adapter"
+    }
+  },
+  "target_note": "120 research runs and 12 fixed-time references.",
+  "protocol": "pure_nonrl_v1",
+  "distinct_papers": 7,
+  "demand_reference": {
+    "estimated_corridor_passage_vps_both_directions": 20,
+    "reference_corridor_related_requested_vph": 36000,
+    "observation_duration_s": 600,
+    "corridor_vph_forward": 0,
+    "reverse_ratio": 1.0,
+    "corridor_vph_reverse": 0,
+    "background_vph": 67500.0,
+    "background_multiplier": 1.0,
+    "total_requested_vph": 67500,
+    "direct_corridor_share": 0.0,
+    "source": "Map-wide ordinary traffic; four tracked corridor journeys. Passage target estimated from a ten-minute video; total map demand is a separate assumption."
+  },
+  "run_kind": "experiment",
+  "completed_runs": 132,
+  "failed_cases": [
+    {
+      "scale": 0.5,
+      "seed": 100,
+      "exit_code": 1
+    }
+  ]
+}

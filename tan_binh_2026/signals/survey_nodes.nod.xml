@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<nodes>
+  <node id="2079964423" x="4093.52" y="3448.34" type="traffic_light" tl="survey_CH_18E" tlType="static" />
+  <node id="13817051850" x="4092.67" y="3439.28" type="traffic_light" tl="survey_CH_18E" tlType="static" />
+  <node id="12834017505" x="4091.83" y="3430.30" type="traffic_light" tl="survey_CH_18E" tlType="static" />
+  <node id="cluster_11323053473_11323053474_2513642427" x="4422.23" y="3405.29" type="traffic_light" tl="survey_CH_UT_TICH" tlType="static" />
+  <node id="2079964894" x="2676.23" y="3560.12" type="traffic_light" tl="survey_CH_NGO_BE" tlType="static" />
+  <node id="366379261" x="2681.75" y="3544.32" type="traffic_light" tl="survey_CH_AP_BAC" tlType="static" />
+  <node id="11399978032" x="2229.33" y="3748.60" type="traffic_light" tl="survey_CH_TKTQ" tlType="static" />
+</nodes>

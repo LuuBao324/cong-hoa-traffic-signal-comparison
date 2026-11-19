@@ -1,0 +1,15 @@
+record_id,location,movement,red_s,green_s,yellow_s,all_red_s,tls_id,survey_date,survey_time,status
+CH_HHT,Cộng Hòa - Hoàng Hoa Thám,Cộng Hòa hướng Trường Chinh,35,50,3,,GS_cluster_2146838339_366467129,,,needs_phase_mapping
+CH_NGO_BE,Cộng Hòa - Ngô Bệ,Cộng Hòa hướng Trường Chinh,26,53,3,,cluster13817051847_2079964894_366379261,,,needs_phase_mapping
+CH_AP_BAC,Cộng Hòa - Ấp Bắc,Cộng Hòa hướng Trường Chinh,32,55,3,,cluster13817051847_2079964894_366379261,,,needs_phase_mapping
+CH_TKTQ,Cộng Hòa - Tân Kỳ Tân Quý,Cộng Hòa hướng Trường Chinh,36,60,3,,cluster11399978032_13817051828_2533900283,,,needs_phase_mapping
+CH_AIRPORT,Cộng Hòa - C12,Cộng Hòa hướng Trường Chinh,57,40,3,,cluster_12564865142_12765516717_12991340401_13441246343_#1more,,,location_name_confirmed_needs_phase_mapping
+CH_TRUONG_CHINH_UTURN,Cộng Hòa - Trường Chinh,quay đầu từ chiều Trường Chinh,42,36,3,,cluster_11453123766_11453135175_2079964012_5757491891,,,needs_lane_and_phase_mapping
+CH_TRUONG_CHINH_THROUGH,Cộng Hòa - Trường Chinh,thẳng hướng Trường Chinh luôn xanh theo ghi chép,0,,0,,cluster_11453123766_11453135175_2079964012_5757491891,,,continuous_green_needs_connection_mapping
+CH_18E,Cộng Hòa - 18E,thẳng hướng Hoàng Văn Thụ,32,67,3,,cluster12834017505_13817051850_2079964423,,,confirmed_two_stage_plan
+CH_UT_TICH,Cộng Hòa - Út Tịch,Út Tịch rẽ trái/phải cùng quay đầu Cộng Hòa,67,38,3,,survey_CH_UT_TICH,,,confirmed_keep_red_67_yellow_separate_green_38
+CH_UT_TICH_THROUGH,Cộng Hòa - Út Tịch,Cộng Hòa đi thẳng,41,64,3,,survey_CH_UT_TICH,,,confirmed_keep_red_41_yellow_separate_green_64
+CH_HVT_ROUNDABOUT,Cộng Hòa - vòng xuyến Hoàng Văn Thụ,thẳng hướng Hoàng Văn Thụ,68,32,3,,GS_1409491228,,,needs_phase_mapping
+CH_18E_LEFT,Cộng Hòa - 18E,trái từ chiều Hoàng Văn Thụ,67,29,3,,cluster12834017505_13817051850_2079964423,,,confirmed_keep_green_29_reported_red_67_program_red_70
+CH_18E_OUT,Cộng Hòa - 18E,xe từ 18E ra cùng lượt rẽ trái và quay đầu ngoài,,29,3,,cluster12834017505_13817051850_2079964423,,,confirmed_two_stage_plan
+CH_18E_OUTER_UTURN,Cộng Hòa - 18E,quay đầu nhánh ngoài cùng lượt rẽ trái vào 18E,,29,3,,cluster12834017505_13817051850_2079964423,,,confirmed_two_stage_plan

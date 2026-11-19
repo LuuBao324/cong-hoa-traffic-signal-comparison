@@ -1,0 +1,4 @@
+demand_scale,runs,all_four_arrived,event_affected_runs,collisions,teleports,probe_records,arrived,censored,run_completion_percent,probe_completion_percent
+0.1,44,44,9,9,9,176,176,0,100.0,100.0
+0.5,44,44,42,184,184,176,176,0,100.0,100.0
+1.0,44,27,44,481,481,176,142,34,61.36363636363637,80.68181818181819
